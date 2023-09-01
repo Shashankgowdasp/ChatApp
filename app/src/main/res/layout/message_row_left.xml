@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_main_msg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="100dp"
+    android:layout_alignParentEnd="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:elevation="1dp"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/chat_bubble_incoming">
+
+        <TextView
+            android:id="@+id/left_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:text="Hello, how are you?"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+
+        <ImageView
+            android:id="@+id/mediaImageView_left"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:padding="10dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_res_doc"
+           android:text="download" />
+        <TextView
+            android:textSize="10sp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/left_time_span"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:text="3:25pm" />
+
+    </LinearLayout>
+
+</RelativeLayout>

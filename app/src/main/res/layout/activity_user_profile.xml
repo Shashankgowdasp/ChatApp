@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <com.google.android.material.appbar.AppBarLayout
+         android:id="@+id/prof_appbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/prof_toolbar"
+              app:contentInsetStartWithNavigation="0dp"
+              android:layout_width="match_parent"
+              android:layout_height="?attr/actionBarSize"
+              android:background="?attr/colorPrimary"
+              android:elevation="4dp"
+              app:title="My Profile"
+              app:titleTextColor="@color/white"
+              app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+              android:theme="@style/ToolbarTheme"
+              app:contentInsetStart="0dp">
+          </androidx.appcompat.widget.Toolbar>
+     </com.google.android.material.appbar.AppBarLayout>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAECEB">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserProfile"
+    android:background="#EAECEB"
+    >
+
+
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/curve_background"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    android:padding="10dp"
+    android:layout_marginBottom="60dp"
+    >
+
+     <ImageView
+         android:id="@+id/profile_pic_settings"
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         android:layout_gravity="center_horizontal"
+         android:background="@drawable/circle_background"
+         android:layout_marginTop="10dp"
+         android:src="@drawable/round_prof" />
+     <TextView
+         android:id="@+id/dp_change_btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="click to change dp"
+         android:layout_gravity="center_horizontal"
+         android:textColor="#128C7E"
+         android:visibility="gone"/>
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="50dp"
+         android:layout_gravity="center"
+         android:padding="10dp">
+
+     <TextView
+         android:id="@+id/profile_name_lable_settings"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:text="Name:"
+         android:textSize="20sp"
+         />
+     <EditText
+         android:id="@+id/profile_name_settings"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:text="name"
+         android:background="#ffff"
+         android:textSize="20sp"
+         android:ellipsize="start"
+         android:maxLines="1"
+         android:maxLength="15"
+         android:layout_marginStart="10dp"
+         android:padding="10dp"
+         android:textStyle="bold"
+         android:drawableEnd="@drawable/edit"
+         android:drawablePadding="10dp"
+         />
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="0dp"
+         android:layout_gravity="center"
+         android:padding="10dp">
+
+          <TextView
+              android:id="@+id/profile_mobile_lable_settings"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:text="Mobile:"
+              android:textSize="20sp"
+              />
+          <EditText
+              android:id="@+id/profile_mobile_settings"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:text="mobile"
+              android:textSize="20sp"
+              android:inputType="number"
+              android:maxLength="10"
+              android:background="#ffff"
+              android:layout_marginStart="10dp"
+              android:padding="10dp"
+              android:textStyle="bold"
+              android:drawableEnd="@drawable/edit"
+              android:drawablePadding="10dp"
+              />
+
+     </LinearLayout>
+
+     <Button
+         android:foreground="?selectableItemBackgroundBorderless"
+         android:id="@+id/prof_update"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="update profile"
+         android:textStyle="bold"
+         android:background="@drawable/btn_background"
+         android:layout_gravity="center_horizontal"
+         android:padding="10dp"
+         android:paddingRight="10dp"
+         android:paddingLeft="10dp"
+         android:layout_marginTop="10dp"
+
+         />
+</LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

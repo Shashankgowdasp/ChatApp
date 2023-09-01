@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_marginTop="0.02dp">
+    <ImageView
+        android:id="@+id/user_profileImageview_recyc"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/dp"/>
+<TextView
+    android:id="@+id/username_item_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="john"
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/user_profileImageview_recyc"
+    android:layout_marginStart="20dp"
+    android:textSize="20sp"
+    android:layout_marginTop="4dp"
+    />
+    <TextView
+        android:id="@+id/item_mobile_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mobile"
+        android:textStyle="normal"
+        android:layout_toRightOf="@+id/user_profileImageview_recyc"
+        android:layout_marginStart="20dp"
+        android:textSize="15sp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unavailable"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="26dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#0AE2FD" /> <!-- Ripple color for pressed state -->
+            <corners android:radius="8dp" /> <!-- Corner radius -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="?attr/colorPrimary" /> <!-- Default background color -->
+            <corners android:radius="8dp" /> <!-- Corner radius -->
+        </shape>
+    </item>
+</selector>
